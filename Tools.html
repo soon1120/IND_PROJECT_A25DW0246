@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ 
+    <title>Useful Tools</title> 
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+    <link rel="stylesheet" 
+    href="https://www.w3schools.com/w3css/4/w3.css"> 
+ 
+    <link rel="stylesheet" href="style.css"> 
+ 
+</head> 
+ 
+<body> 
+ 
+<div class="w3-container w3-center tools-box"> 
+ 
+    <h1 class="w3-xxxlarge"> 
+        Useful Tools 
+    </h1> 
+ 
+    <a href="Main.html" 
+    class="w3-button w3-round-large button-gray"> 
+ 
+        Home 
+ 
+    </a> 
+ 
+    <hr> 
+ 
+    <!-- Calculator --> 
+ 
+    <div class="w3-card w3-padding w3-margin card-dark"> 
+ 
+        <h2>Simple Calculator</h2> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="num1" 
+        placeholder="Enter first number"> 
+ 
+        <br> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="num2" 
+        placeholder="Enter second number"> 
+ 
+        <br> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="add()">+</button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="subtract()">-</button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="multiply()">*</button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="divide()">/</button> 
+ 
+        <p id="calcResult"></p> 
+ 
+    </div> 
+ 
+    <!-- BMI --> 
+ 
+    <div class="w3-card w3-padding w3-margin card-dark"> 
+ 
+        <h2>BMI Checker</h2> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="weight" 
+        placeholder="Weight (kg)"> 
+ 
+        <br> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="height" 
+        placeholder="Height (cm)"> 
+ 
+        <br> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="checkBMI()"> 
+ 
+            Check BMI 
+ 
+        </button> 
+ 
+        <p id="bmiResult"></p> 
+ 
+    </div> 
+ 
+    <!-- Tax --> 
+ 
+    <div class="w3-card w3-padding w3-margin card-dark"> 
+ 
+        <h2>Income Tax Calculator</h2> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="income" 
+        placeholder="Enter income"> 
+ 
+        <br> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="calculateTax()"> 
+ 
+            Calculate Tax 
+ 
+        </button> 
+ 
+        <p id="taxResult"></p> 
+ 
+    </div> 
+ 
+    <!-- Converter --> 
+ 
+    <div class="w3-card w3-padding w3-margin card-dark"> 
+ 
+        <h2>Unit Converter</h2> 
+ 
+        <input class="w3-input w3-round" 
+        type="number" 
+        id="unitInput" 
+        placeholder="Enter value"> 
+ 
+        <br> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="cmToMeter()"> 
+ 
+            CM to Meter 
+ 
+        </button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="meterToCm()"> 
+ 
+            Meter to CM 
+ 
+        </button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="meterToKm()"> 
+ 
+            Meter to KM 
+ 
+        </button> 
+ 
+        <button class="w3-button button-gray" 
+        onclick="kmToMeter()"> 
+ 
+            KM to Meter 
+ 
+        </button> 
+ 
+        <p id="unitResult"></p> 
+ 
+    </div> 
+ 
+</div> 
+ 
+<script src="script.js"></script> 
+ 
+</body> 
+ 
+</html>
